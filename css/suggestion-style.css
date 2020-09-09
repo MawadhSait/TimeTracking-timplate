@@ -1,0 +1,44 @@
+#headerSuggestion div p{
+    color: #CF1240;
+    font-family: Tajawal-Regular;
+    font-size: 22px; 
+    font-weight: bold;
+}
+.btn-send-suggestion{
+    background-color: #CF1240;;
+    border-radius: 10px;
+    font-family: Tajawal-Regular;
+    color: white;
+    font-size: 22px;  
+}
+.btn-send-suggestion:hover{
+    background-color: white;
+   border: 1px solid #CF1240;
+   color: #CF1240;
+}
+.form-control{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+}
+/* .dropdown{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+} */
+.sender-label{
+    font-family: Tajawal-Regular;
+    font-size: 20px;  
+    font-weight: bold;
+}
+
+
+@media only screen and (width:1024px) {
+    #suggestionBody div .ipad{
+      margin-right: 10px!important;
+    }
+    .sender-label{
+
+font-size: 17px!important; 
+
+}
+    
+ }

@@ -1,0 +1,341 @@
+.sec-title{
+    font-size: 22px;
+    font-weight: bold;
+     font-family: Tajawal-Regular;
+}
+.stat-nav li a{
+    font-size: 20px;
+     font-family: Tajawal-Regular;
+     color:#B2B2B2;
+}
+.stat-nav li .nav-link .active
+{    color: black;
+}
+.stat-nav li a:hover
+{    color: black;
+}
+.download-summary i,
+.sort-stat a:hover{
+    color: #C71414
+}
+.download-summary:hover i,
+.sort-stat a{
+    color:#B2B2B2;
+    font-size: 20px;
+}
+.sort-statistics{
+    color:#B2B2B2;
+    font-size: 20px;
+     font-family: Tajawal-Regular;
+}
+.total-hours-weekly p{
+    color:#B2B2B2;
+    font-size: 16px;
+     font-family: Tajawal-Regular;
+     margin-bottom: 0px;
+}
+.total-hours-weekly div{
+    font-size: 35px;
+}
+
+.dropdown-calender{
+    font-size: 17px;
+     font-family: Tajawal-Regular;
+}
+
+/* 222222222 */
+.calender-icon{
+    color:#B2B2B2;
+    font-size: 15px;
+}
+.dropdown-calender .fa-angle-right,
+.dropdown-calender .fa-angle-left{
+    color:#B2B2B2;
+    margin: auto;
+}
+.calender-angle:hover{
+   background-color: rgb(236, 236, 236);
+}
+
+.dropdown-calender{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px
+}
+.static-sort{
+    box-shadow: 0px 1px 3px #e7e7e7
+}
+.sort-summary-pie{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+}
+.sort-btn{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color: #B2B2B2;;
+}
+.sort-btn:hover{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color: #B2B2B2;
+}
+.sort-selection{
+    color: black;
+}
+.angle-up-sort{
+    color: #B2B2B2;;
+}
+.dropdown-sort-selection a:hover {
+background-color: #EBF3E6;
+color: #4BC800;
+border-radius: 10px;
+}
+.duration .angle-up{
+    color: #B2B2B2;;
+}
+
+.num{
+    width: 33px;
+    height: 33px;
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    padding: 0;
+    color: #B2B2B2;;
+}
+.title-table p{
+    color: #B2B2B2;;
+}
+.projectname,
+.project-searching .pharmacy {
+    color: #06A893;
+}
+
+.projectname2,
+.project-searching div {
+    color: #E36A00;
+}
+.dropdwon-projects .dropdown-size{
+  width: 250px;
+  border-radius: 10px;
+}
+a {
+text-decoration: none!important;
+}
+.dropdown-size{
+    width: 300px;
+}
+
+
+#weeklySortsDetails{
+    box-shadow: 0px 1px 3px #e7e7e7, 0px -1px 3px #e7e7e7
+}
+.collapse-btn{
+    width: 33px;
+    height: 33px;
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color:#B2B2B2;
+}
+.collapse-btn:focus{
+ background-color: #DEF5D1;
+ border-color:#4BC800;
+ color:#4BC800;
+}
+.collapse-btn:hover{
+ background-color: #DEF5D1;
+ border-color:#4BC800;
+ color:#4BC800;
+}
+.collapse-rows{
+    background-color: #F6F6F6}
+.collapse-angle{
+    width: 33px;
+    height: 33px;
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color:#B2B2B2;
+    padding: 5px;
+}
+.header-details-sort {
+border-bottom: 2px solid #CF1240; 
+padding-top: 15px; 
+position: relative;
+}
+.header-details-sort:after {
+position: absolute; 
+bottom: -6px; 
+right: 0; 
+height: 10px; 
+width: 10px; 
+background: #CF1240;
+content: ""; 
+border-radius: 5px;
+}
+.header-sort-week-title{
+    color:#CF1240; 
+    font-size: 20px;
+     font-family: Tajawal-Regular;
+     font-weight: bold;
+}
+.header-details-sort div p{
+    color:#CF1240; 
+    font-size: 20px;
+     font-family: Tajawal-Regular;
+     font-weight: bold;
+  
+}
+.project-name-sort-weekly div {
+    list-style: circle;
+    color: #06A893;
+}
+.project-name-sort-weekly-2 div {
+    list-style: circle;
+    color: #E36A00;
+}
+
+.total-hours-row div p{
+    color:#B2B2B2;
+    font-size: 20px;
+     font-family: Tajawal-Regular;
+     font-weight: bold;
+}
+.total-hours-col p{
+    font-weight: bold;
+}
+.totals div p{
+    font-weight: bold;
+}
+
+
+
+.sort-summary-pie{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+}
+.sort-btn{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color: #B2B2B2;;
+}
+.sort-btn:hover{
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    color: #B2B2B2;
+}
+.sort-selection{
+    color: black;
+}
+.angle-up-sort{
+    color: #B2B2B2;;
+}
+.dropdown-sort-selection a:hover {
+background-color: #EBF3E6;
+color: #4BC800;
+border-radius: 10px;
+}
+.duration .angle-up{
+    color: #B2B2B2;;
+}
+
+.num{
+    width: 33px;
+    height: 33px;
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    padding: 0;
+    color: #B2B2B2;;
+}
+.title-table p{
+    color: #B2B2B2;;
+}
+.projectname,
+.project-searching .pharmacy {
+    color: #06A893;
+}
+
+.projectname2,
+.project-searching div {
+    color: #E36A00;
+}
+.dropdwon-projects .dropdown-size{
+  width: 250px;
+  border-radius: 10px;
+}
+a {
+text-decoration: none!important;
+}
+.dropdown-size{
+    width: 300px;
+}
+.pie-total-hours{
+    font-size: 35px;
+     font-family: Tajawal-Regular;
+}
+.pie-total-hours p{
+    font-size: 17px;
+     font-family: Tajawal-Regular;
+     color: #B2B2B2;
+}
+
+
+.projectname-summary,
+  .projectname-summary a{
+    color: #06A893;
+}
+
+.projectname2-summary,
+.projectname2-summary a{
+    color: #E36A00;
+}
+.projectname-summary i,
+.projectname2-summary i{
+font-size: 5px;
+}
+.element {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width:800px) {
+.img-user{
+    display: none!important;
+}
+.dropdown-size{
+    width: 250px!important;
+}
+}
+@media only screen and (max-width:800px) {
+.txt-sm div p{
+    font-size: 15px!important;
+  }
+  .txt-sm-body div p{
+    font-size: 12px!important;
+  }
+}
+@media only screen and (max-width:700px) {
+
+/* .date-stat{
+    display: none!important;
+} */
+}
+
+@media only screen and (max-width:800px) {
+.img-user{
+    display: none!important;
+}
+.dropdown-size{
+    width: 250px!important;
+}
+.projectname ,
+.projectname2 {
+    display: none!important;
+}
+
+}
+@media only screen and (max-width:1024px) {
+    .week-time-hide{
+        display: none!important;
+    }
+
+}

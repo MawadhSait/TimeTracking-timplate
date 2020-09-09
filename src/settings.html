@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <!-- Bootstrap -->
+ <link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-rtl.css">
+<!-- Fontsawsome -->
+<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+<!-- uploding file plugins -->
+<link rel="stylesheet" href="../css/jquery.ezdz.min.css">
+<link rel="stylesheet" href="../css/uplode-file-style.css">
+    <title>Settings</title>
+</head>
+
+<body >
+ 
+
+
+      <!-- side bar -->
+  <div id="sidebar">
+    <div class="container">
+      <div class="row mt-3 mb-lg-5 mb-sm-5">
+        <div class="col-lg-6">
+          <div class="logo d-none d-lg-block "><img src="../images/logo2.png" alt=""></div>
+        </div>
+        <div class="col-sm-12 pb-sm-3 px-sm-0 offset-lg-2 col-lg-4 d-flex justify-content-start justify-content-lg-end ">
+         <div class="ring-bell btn"><i class="fas fa-bell bell"></i></div> 
+        </div>
+      </div>
+      <div class="row mt-5 ">
+        <div class="sidebar col">
+          <ul class="nav flex-column  sidebar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../src/timerSection.html"> <i class="fas fa-clock"></i>
+                   <div class="d-inline text-sidebar">المؤقت</div> 
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/statistics/statisticsDetails.html">  <i class="far fa-chart-bar"></i>
+                   <div class="d-inline text-sidebar">الإحصائيات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/projects/projects.html"><i class="fas fa-folder"></i>
+                  <div class="d-inline text-sidebar">المشاريع</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/marker/marker.html"><i class="fas fa-tag"></i>
+                  <div class="d-inline text-sidebar">العلامات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/holidays/holidays.html"><i class="fas fa-calendar-alt"></i>  
+                  <div class="d-inline text-sidebar">الإجازات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/complaintsAndSuggestions/complaintAndSuggestions.html"> 
+                    <i class="fas fa-comments"></i>
+                  <div class="d-inline text-sidebar">الشكاوي</div> 
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- end sidebar -->
+<!-- content -->
+<div class="content"> 
+  <!-- nav bar -->
+  <div class="dropdown d-flex justify-content-end dropdown-avatar">
+    <a class="btn d-inline-flex" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="img-user pt-2">AA</div>
+      <div class="user-info mr-1">
+        <div class="user-name">أمل العمري</div>
+        <div class="user-email">amal@gmail.com</div>
+      </div>
+    </a>
+    <div class="dropdown-menu  speech-bubble dropdown-menu-profile mr-auto" aria-labelledby="dropdownMenuUser">
+      <a class="dropdown-item" href="../src/team.html"><i class="fa fa-users" aria-hidden="true"></i>الفريق</a>
+      <a class="dropdown-item" href="team.html"><i class="fas fa-cog"></i>الإعدادت</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="settings.html"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
+    </div>
+  </div>
+<div class="personal-page pt-3 pr-3">
+    <p>الملف الشخصي</p>
+</div>
+<section  id="personal-info" class="my-5 py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img ">
+                    <!-- <div class="img-circle-setting text-center pt-md-5">
+                     <i class="fa fa-camera" aria-hidden="true"></i>
+                     <div class="img-txt-setting  text-center pt-md-3">
+                         <i class="fa fa-camera" aria-hidden="true"></i>
+                         <p class="mb-0">أدرج صورة </p>
+                         <p class="mt-0">أو اسحب واحدة هنا</p>
+                     </div>
+                     
+                    </div> -->
+                    <input type="file" accept="image/png, image/jpeg" class="icon login" >
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-3 offset-md-2 offset-lg-0">
+                <div class="profile-name pt-lg-5 pt-sm-2">
+                    <label for="" class="col-sm-2 col-form-label profile-name-label">الاسم</label>
+                    <input type="text" class="form-control username-profile border" >
+                </div>
+                <div class="profile-contery ">
+                    <label for="country-options" class="col-sm-2 col-form-label country-options-label">الدولة</label>
+                    <select class="form-control countries-options border">
+                    <option>المملكة العربية السعودية</option>
+                    <option>مصر</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section profile  -->
+<section id="settings-section" class="my-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-lg-3 ">
+                <div>
+                    <label for="Timer-UTC" class="col-sm-12 col-form-label Timer-UTC-label">التوقيت</label>
+                    <select name="Timer-UTC" id="timer-utc" class="form-control">
+                        <option value="utc-2">آسيا/الرياض UTC-2</option>
+                        <option value="utc-4">افريقيا/القاهرة UTC-4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1 col-lg-3 offset-lg-2">
+                <div>
+                    <label for="time-format" class="col-sm-12 col-form-label time-format-label">شكل التاريخ</label>
+                    <select name="timeing" id="time-format" class="form-control">
+                        <option value="">MM/DD/YYYY</option>
+                        <option value="">DD/MM/YYYY</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-md-5">
+            <div class="col-md-5  col-lg-3 ">
+                <div>
+                    <label for="time-formula" class="col-sm-12 col-form-label time-formula-label">شكل مدة الوقت</label>
+                    <select name="time-formula" id="time-formula" class="form-control">
+                        <option value="">(0:47:06)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1 col-lg-3 offset-lg-2">
+                <div>
+                    <label for="week-start" class="col-sm-12 col-form-label week-start-label">بداية الأسبوع</label>
+                    <select name="week-start" id="week-starting" class="form-control">
+                        <option value="1">السبت</option>
+                        <option value="2">الأحد</option>
+                        <option value="3">الأثنين</option>
+                        <option value="4">الثلاثاء</option>
+                        <option value="5">الأربعاء</option>
+                        <option value="6">الخميس</option>
+                        <option value="7">الجمعة</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="d-flex flex-row-reverse">
+            <div class="col-md-4 rounded">
+                <div class="mb-5">
+                    <a type="button" class="btn btn-change-password form-control">تغيير كلمة المرور</a>
+               </div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+<!-- end of content -->
+</div> 
+
+
+
+<!-- Style -->
+<link rel="stylesheet" href="../css/style-main.css">
+<link rel="stylesheet" href="../css/global-style.css">
+  <!-- JQ -->
+<script src="../js/jquery-3.5.1.min.js"></script>
+<!-- <script src="../js/signValidation.js"></script> -->
+<script src="../js/jquery.ezdz.min.js"></script>
+  <!-- Popper JS -->
+<script src="../js/popper.min.js"></script>
+  <!-- JS Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/uplode-file-setting.js"></script>
+
+</body>
+</html>

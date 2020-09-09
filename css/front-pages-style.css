@@ -1,0 +1,117 @@
+/* 
+this is style file for two pages 
+	1-index
+	2-forgetpassword
+
+*/
+html{
+	direction:ltr;
+	margin: 0px;;
+	padding: 0px;
+   overflow-x: hidden;
+}
+*{
+	box-sizing: border-box;
+}
+
+body {   
+	background-image:url("../images/bg2.png"); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+	/* align-items: center; */
+} 
+
+img{
+	width: 100%;
+}
+
+@font-face {
+	font-family: Tajawal-Black;
+	src: url("../fonts/Tajawal-Black.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-Bold;
+	src: url("../fonts/Tajawal-Bold.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-ExtraBold;
+	src: url("../fonts/Tajawal-ExtraBold.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-ExtraLight;
+	src: url("../fonts/Tajawal-ExtraLight.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-Light;
+	src: url("../fonts/Tajawal-Light.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-Medium;
+	src: url("../fonts/Tajawal-Medium.ttf");
+  }
+  @font-face {
+	font-family: Tajawal-Regular;
+	src: url("../fonts/Tajawal-Regular.ttf");
+  }
+
+#sign-in-title,
+#forget-pass-title{
+	font-size: 50px;
+	font-family: Tajawal-ExtraBold;
+}
+#sign-in-email-label,
+#sign-in-pass-label,
+#forget-pass-info{
+	font-size: 30px;
+	font-family: Tajawal-Medium;
+}
+.sign-in-btn,
+.forget-btn{
+	background-color: #CF1240;
+	color: white;
+	/* width: 100%; */
+	font-size: 22px;
+	font-family: Tajawal-Light;
+}
+
+.forget-pass a{
+	color: #CF1240;
+	font-size: 22;
+}
+.error-sign-in,
+.error-pass{
+	padding: 5px ;
+}
+
+.sign-in-btn:active,
+.forget-btn:active{
+    animation: beat 1s  alternate;
+}
+@keyframes beat{
+	to { transform: scale(1.1); }
+}
+
+
+@media only screen and (max-width: 600px) {
+#sign-in-email-label,
+#sign-in-pass-label,
+#forget-pass-info{
+	font-size: 20px!important; 
+
+}
+
+#sign-in-title,
+#forget-pass-title{
+	font-size: 30px!important; 
+
+}
+}
+
+@media only screen and (width: 1024px) {
+.tt {
+	margin-top: 30%;
+
+  }
+}

@@ -1,0 +1,24 @@
+    /* body {
+      font: 12px Arial;
+      margin: 20px auto;
+      text-align: center;
+      width: 260px;
+    }
+
+    form  {
+      margin: 20px 0;
+    }
+
+    input[type="submit"] {
+        margin: 20px 0;
+    } */
+    .login::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900; ;
+    }
+    .icon::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }

@@ -1,0 +1,509 @@
+/* 
+this style file for:
+1-timer section 
+2-settings
+*/
+
+body{
+overflow-x: hidden;
+}
+/* fonts */
+@font-face {
+font-family: Tajawal-Bold;
+src: url("../fonts/Tajawal-Bold.ttf");
+}
+@font-face {
+font-family: Tajawal-Medium;
+src: url("../fonts/Tajawal-Medium.ttf");
+}
+@font-face {
+	font-family: Tajawal-Regular;
+	src: url("../fonts/Tajawal-Regular.ttf");
+  }
+
+.bell{
+color: #D5D5D5;
+font-size: 20px;
+}
+.sidebar{
+transition: all .5s ease;
+padding-right: 0px;
+}
+.sidebar ul li a{
+display: block;
+width: 100%;
+height: 100%;
+line-height: 35px;
+padding-left: 0px;
+box-sizing: border-box;
+font-family: Tajawal-Medium;
+font-size: 20px;
+color: black;
+transition: .4s;
+}
+.sidebar-nav .nav-item:hover a{
+padding-right: 30px;
+}
+.sidebar-nav .nav-item:hover{
+border-right: 5px solid #CF1240;
+box-shadow: -10px 10px 20px 1px #b2b2b23d;
+}
+.sidebar-nav .nav-item a:hover i{
+color:  #CF1240;
+}
+/* .sidebar-nav .nav-item a i{margin-left: 8px;} */
+.sidebar-nav .nav-item a i{
+color: #b2b2b2;
+}
+.navbar{
+position: absolute;
+z-index: -1;
+}
+#sidebar{
+position: fixed;
+right: 0px;
+width: 272px;
+height: 100%;
+box-shadow: -10px 0px 20px 1px #b2b2b23d;
+z-index: 2;
+}
+.ring-bell:hover .bell{
+animation: ringbell 4s .1s ease-in-out infinite alternate;
+}
+/* .content{
+margin-right: 280px;
+} */
+
+/* avatar style */
+.speech-bubble:after {
+content: '';
+position: absolute;
+top: 10px;
+left: 50%;
+width: 0;
+height: 0;
+border: 17px solid transparent;
+border-bottom-color:white;
+border-top: 0;
+margin-left: 17px;
+margin-top: -17px;
+z-index: -1;
+}
+.dropdown-menu {
+border-radius: 5%;
+-webkit-box-shadow: 0 0 10px #00000016;
+box-shadow: 0 0 10px #00000016;
+}
+#dropdownMenuUser .user-img{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+background-color: #C7AF14;
+color: white;
+font-size: 25px;
+}
+.user-info .user-name
+{
+font-size: 20px;
+color: #676767;
+}
+.user-info .user-email{
+font-size: 20px;
+color: #A8A8A8;
+}
+.dropdown-menu-profile a i{
+margin-left: 10px;
+color:#676767;
+font-size: 20px;
+}
+.dropdown-menu-profile a {
+font-size: 20px;
+color:#676767;
+font-size: 19px;
+}
+.navbar-top{
+box-shadow: 0 4px 2px -2px #00000016;
+}
+.dropdown-menu-profile{
+position: relative;
+right: 0;
+}
+.dropdown-avatar{
+box-shadow: 0 4px 2px -2px #b2b2b23d;
+}
+/* end avatar */
+
+/* adding new project  */
+
+.adding-project{
+
+padding-top: 15px;
+padding-left: 0px;
+padding-right: 0px;
+margin-right: 10px;
+}
+.input-adding-project{
+  padding-right: 20px;
+border: none;
+}
+.start-timer input{
+border: none;
+}
+.input-adding-project:active{
+border: white;
+}
+.head .start{
+width: 53px;
+height: 53px;
+border-radius: 50%;
+background-color: #03AB2D;
+color: white;
+}
+.head .start .btn,
+.head .pause .btn {
+padding: 0px;
+}
+.head .start .btn i{
+padding-top: 5px;
+padding-right: 4px;
+}
+.head .pause .btn i{  padding-top: 5px;
+padding-right: 8px;}
+.head .pause{
+width: 53px;
+height: 53px;
+border-radius: 50%;
+background-color: red;
+color: white;
+}
+.head .start .btn i,
+.head .pause .btn i{
+color: white;
+font-size: 40px; 
+}
+/* .fa-circle{
+font-size: 5px;
+}
+.task-subtitle .fa-circle{
+font-size: 1px;
+} */
+.project-name,
+.btn-marker{
+padding-left: 0px;
+padding-right: 0px;
+}
+/* .project-name,
+.timer,
+.btn-marker
+{
+} */
+.btn-marker:active{
+color:#D21241;
+}
+.header .fa-trash-alt{
+font-size: 20px;
+}
+.header .fa-trash-alt:active,
+.header .fa-trash-alt:hover{
+color: red;
+transform: scale(1.3);
+}
+.header,
+.head{
+  margin:auto
+}
+/* timer-details */
+.timer-detail{
+/* box-shadow: 0px 5px 5px #00000017, 0px -5px 5px #00000017; */
+}
+.timer-detail .active
+{
+border-bottom: 2px solid #D21241; 
+}
+.timer-detail .active::after{
+background:#D21241; 
+}
+/* .day-time {
+border-bottom: 2px solid #B2B2B2; 
+padding-top: 15px; 
+position: relative;
+}
+.day-time:after {
+position: absolute; 
+bottom: -6px; 
+right: 0; 
+height: 10px; 
+width: 10px; 
+background: #B2B2B2;
+content: ""; 
+border-radius: 5px;
+} */
+.active .day,
+.timer-day{
+font-size: 20px;
+font-weight: bold;
+color: #D21241; ;
+font-family: Tajawal-Regular;
+}
+.day{
+font-size: 20px;
+font-weight: bold;
+color: #B2B2B2; ;
+font-family: Tajawal-Regular;
+}
+.task-title{
+font-size: 20px;
+color: #303030;
+font-family: Tajawal-Regular;
+}
+
+hr{
+border-bottom: 1px solid #b2b2b213;
+margin-top: 0px; 
+}
+.task-marker,
+.start-end-task,
+.total-time,
+.start-task,
+.pause-task,
+.remove-task{
+margin-left: 15px;
+}
+
+.task-marker,
+.start-task .btn i,
+.pause-task .btn i,
+.remove-task .btn i{
+color:#B2B2B2; 
+}
+.task-marker:hover{
+color:#D21241;
+transform: rotate(32deg);
+}
+.start-task .btn i:hover{
+color:#03AB2D;
+}
+.remove-task .btn i:hover{
+animation: ring 4s .1s ease-in-out infinite alternate;
+color: red;
+}
+/* animations */
+@keyframes ring {
+0% { transform: rotate(30deg); }
+3% { transform: rotate(-28deg); }
+5% { transform: rotate(34deg); }
+7% { transform: rotate(-32deg); }
+10% { transform: rotate(0); }
+}
+
+
+@keyframes ringbell {
+0% { transform: rotate(0); }
+3% { transform: rotate(-28deg); }
+17% { transform: rotate(22deg); }
+19% { transform: rotate(-20deg); }
+21% { transform: rotate(18deg); }
+31% { transform: rotate(-8deg); }
+33% { transform: rotate(6deg); }
+39% { transform: rotate(-1deg); }
+41% { transform: rotate(1deg); }
+43% { transform: rotate(0); }
+100% { transform: rotate(0); }
+}
+
+
+/* settings file */
+#personal-info .container
+#settings-section .container{
+    padding-left: 0%;
+
+}
+
+.personal-page p{
+    font-family: Tajawal-Regular;
+    font-size: 22px;
+    font-weight: bold;
+}
+#personal-info,
+#settings-section{
+    box-shadow: 0px 1px 3px #B2B2B2;
+
+}
+.img-circle-setting{
+    height: 274px;
+    width: 274px;
+    border: 1px dashed #B2B2B2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-circle-setting i{
+     font-size: 100px;
+     color: #B2B2B2;
+}
+.btn-change-password{
+  color: #CF1240;
+  border: 1px solid #CF1240;
+  color:  #CF1240!important;
+  font-size: 20px;
+  font-family: Tajawal-Regular;
+}
+.btn-change-password:hover{
+  color: white!important;
+ background-color:  #CF1240;
+}
+.img-txt-setting{
+ font-size: 20px;
+ color: #B2B2B2;
+}
+.country-options-label,
+.profile-name-label,
+.Timer-UTC-label,
+.time-format-label,
+.time-formula-label,
+.week-start-label{
+ font-size: 20px;
+ font-family: Tajawal-Regular;
+}
+.countries-options,
+.username-profile,
+#timer-utc,
+#time-format,
+#time-formula,
+#week-starting,
+.btn-change-password{
+border-radius: 10px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px){
+ 
+}
+/* input[type="file"] {
+  display: none;
+}
+.custom-img-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+} */
+@media only screen and (max-width: 900px){
+
+}
+@media only screen and (width: 1024px){
+  .img-circle-setting{
+      height: 200px!important;
+      width: 200px!important;
+  }
+  .img-circle-setting i{
+       font-size: 50px!important;
+  }
+  .img-txt-setting{
+  font-size: 15px!important;
+}
+}
+@media only screen and (width: 320px){
+  .profile-img {
+      padding-right: 0px!important;
+  }
+.content{
+margin-right: 35px!important;
+}
+#sidebar{
+width: 30px!important;
+padding-right: 3px!important;
+padding-left: 5px!important;
+}
+#sidebar .container{
+padding: 0px!important;
+}
+.sidebar-nav .nav-item:hover a{
+padding-right: 7px!important;
+}
+} 
+
+@media only screen and (width: 768px){
+.head .pause
+.head .start{
+width: 30px!important;
+height: 30px!important;
+}
+.head .pause .btn i,
+.head .start .btn i{
+padding-top: 7px!important;
+padding-right: 7px!important;;
+font-size: 35px!important;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.text-sidebar{
+display: none!important;
+}
+#sidebar{
+width: 50px!important;
+}
+.sidebar-nav .nav-item:hover a{
+padding-right: 15px!important;
+}
+.sidebar-nav .nav-item:hover{
+box-shadow:none!important;
+}
+.content{
+margin-right: 50px!important;
+}
+.user-img{
+height: 30px!important;
+width: 30px!important;
+font-size: 20px!important;
+}
+.ring-bell{
+padding-right: 5px!important;
+}
+/* settings */
+.country-options-label,
+.profile-name-label,
+.Timer-UTC-label,
+.time-format-label,
+.time-formula-label,
+.week-start-label{
+  font-size: 17px!important;
+}
+.head{
+  margin-top: 10px;
+}
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px){
+
+    .day,
+    .timer-day
+    {font-size: 17px!important; }
+    .task-title{ font-size: 15px!important; }
+    .user-info .user-name,
+    .user-info .user-email
+    {font-size: 17px!important;}
+    .img-circle-setting{
+      padding-top: 10px!important;
+      height: 100px!important;
+      width: 100px!important;
+      margin: auto;
+  }
+  /* settings */
+  .img-circle-setting i{
+       font-size: 40px!important;
+  }
+  .img-txt-setting{
+  font-size: 10px!important;
+}
+.content{
+  padding-left: 3px!important;
+  padding-right: 0px!important;
+  }
+.timer-day{
+  padding-left: 7px!important;
+}
+
+}

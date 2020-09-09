@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-rtl.css">
+<!-- Fontsawsome -->
+<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <title>Timer</title>
+</head> 
+<style>
+
+</style>
+<body>  
+
+    <!-- side bar -->
+    <div id="sidebar">
+      <div class="container">
+        <div class="row mt-3 mb-lg-5 mb-sm-5">
+          <div class="col-lg-6">
+            <div class="logo d-none d-lg-block "><img src="../images/logo2.png" alt=""></div>
+          </div>
+          <div class="col-sm-12 pb-sm-3 px-sm-0 offset-lg-2 col-lg-4 d-flex justify-content-start justify-content-lg-end ">
+           <div class="ring-bell btn"><i class="fas fa-bell bell"></i></div> 
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="sidebar col">
+            <ul class="nav flex-column  sidebar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="timerSection.html"> <i class="fas fa-clock"></i>
+                     <div class="d-inline text-sidebar">المؤقت</div> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../src/statistics/statisticsDetails.html">  <i class="far fa-chart-bar"></i>
+                     <div class="d-inline text-sidebar">الإحصائيات</div> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../src/projects/projects.html"><i class="fas fa-folder"></i>
+                    <div class="d-inline text-sidebar">المشاريع</div> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../src/marker/marker.html"><i class="fas fa-tag"></i>
+                    <div class="d-inline text-sidebar">العلامات</div> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../src/holidays/holidays.html"><i class="fas fa-calendar-alt"></i>  
+                    <div class="d-inline text-sidebar">الإجازات</div> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../src/complaintsAndSuggestions/complaintAndSuggestions.html"> 
+                      <i class="fas fa-comments"></i>
+                    <div class="d-inline text-sidebar">الشكاوي</div> 
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  <!-- end sidebar -->
+  <!-- content -->
+  <div class="content"> 
+    <!-- nav bar -->
+    <div class="dropdown d-flex justify-content-end dropdown-avatar">
+      <a class="btn d-inline-flex" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="img-user pt-2">AA</div>
+        <div class="user-info mr-1">
+          <div class="user-name">أمل العمري</div>
+          <div class="user-email">amal@gmail.com</div>
+        </div>
+      </a>
+      <div class="dropdown-menu  speech-bubble dropdown-menu-profile mr-auto" aria-labelledby="dropdownMenuUser">
+        <a class="dropdown-item" href="../src/team.html"><i class="fa fa-users" aria-hidden="true"></i>الفريق</a>
+        <a class="dropdown-item" href="../src/settings.html"><i class="fas fa-cog"></i>الإعدادت</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
+      </div>
+    </div>
+
+<!-- end navbar -->
+
+<!-- start timer section -->
+
+
+<section id="add-new-project" class="my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-9 d-inline-flex adding-project box-shadow">  
+          <div class="row w-100 ">
+          <div class="col-sm-12 col-md-5 col-lg-7">
+          <input type="text" placeholder="ادخل المهمة و انقر لبدء الوقت" class="input-adding-project w-100 ">
+          </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 ">
+              <div class="d-flex justify-content-around">
+            <div class="btn project-name  " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+              <i class="far fa-circle fa-xs"></i> المشروع <i class="fa fa-angle-down pt-1 pl-1 icon-to-change" aria-hidden="true"></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"></a>
+              </div>
+             </div>
+             <div class="timer  border-left border-right px-3 ">
+              
+                <div id="startingTimer">00:00:00</div>
+       
+             </div>
+              <div class="btn btn-marker "><i class="fas fa-tag"></i></div>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="col-1  head ">
+          <div class="start mr-sm-0" id="startTimer">
+              <div class="btn">
+                  <i class="fas fa-play"></i>
+                </div>
+            </div>
+          <div class="pause" id="endTimer">
+              <div class="btn">
+                  <i class="fas fa-pause"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-1  header">
+          <div class="remove">
+              <div class="btn">
+                  <i class="fas fa-trash-alt bin"></i>
+                </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="week-summary" class="mt-4 mb-0">
+    <div class="container ">
+      <p class="mb-0"> هذا الأسبوع: <i>25:06:46</i></p> 
+    </div>
+</section>
+
+<!-- Timeline of days -->
+<section id="timer-details" class="my-1">
+  <!-- Day 1 -->
+ <div class="timer-detail my-5 box-shadow ">
+  <div class="header-line pb-2 pt-4 d-flex justify-content-between active">
+      <p class="day ml-sm-2 ml-md-5">اليوم</p>
+      <p class="timer-day mr-sm-0 mr-md-5">3:06:51</p>
+  </div>
+  <!-- Task 1 -->
+  <ul class="list-group list-group-flush mt-1">
+      <li class="list-group-item d-flex justify-content-between">
+            <div class="task d-inline-flex">
+                <p class="task-title mr-md-2">دراسة المشروع</p>
+                <div class="d-inline-flex ml-lg-2 projectname">
+                  <i class="far fa-circle text-center pt-2 pr-3"></i>
+                  <p>موقع الصيدلية</p>
+                </div>
+                <!-- <i class="task-subtitle first second d-none d-md-block"><i class="far fa-circle pr-2"></i>موقع صيدليه</i> -->
+            </div>
+        <div class=" task-opetions d-inline-flex">
+            <div class="btn task-marker d-none d-md-block">
+              <i class="fas fa-tag"></i>
+            </div>
+            <p class="start-end-task d-none d-md-block">10:54AM - 11:51AM</p>
+            <p class="total-time d-none d-md-block">2:35:09</p>
+            <div class="start-task">
+              <div class="btn">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+            <div class="pause-task">
+              <div class="btn">
+              <i class="fas fa-pause"></i>
+            </div>
+          </div>
+            <div class="remove-task">
+              <div class="btn">
+              <i class="fas fa-trash-alt "></i>
+            </div>
+          </div>
+        </div>
+    </li>
+   <!-- Task 2 -->
+   <li class="list-group-item d-flex justify-content-between">
+    <div class="task d-inline-flex">
+        <p class="task-title mr-md-2">تصميم واجهة التطبيق</p>
+        <!-- <i class="task-subtitle second d-none d-md-block"><i class="far fa-circle pr-2"></i>تطبيق المواقع</i> -->
+        <div class="d-inline-flex ml-lg-2 projectname2">
+          <i class="far fa-circle text-center pt-2 pr-3"></i>
+          <p>موقع الصيدلية</p>
+        </div>
+      </div>
+<div class=" task-opetions d-inline-flex">
+    <div class="btn task-marker d-none d-md-block"><i class="fas fa-tag"></i></div>
+    <p class="start-end-task d-none d-md-block">8:54AM - 10:50AM</p>
+    <p class="total-time d-none d-md-block">2:35:09</p>
+    <div class="start-task">
+      <div class="btn">
+      <i class="fas fa-play"></i>
+    </div>
+  </div>
+    <div class="pause-task">
+      <div class="btn">
+      <i class="fas fa-pause"></i>
+    </div>
+  </div>
+    <div class="remove-task">
+      <div class="btn">
+      <i class="fas fa-trash-alt "></i>
+    </div>
+  </div>
+</div>
+ </li>
+    </ul>
+</div>
+  <!-- Day 2 -->
+  <div class="timer-detail my-5 box-shadow">
+    <div class="header-line pb-2 pt-4 d-flex justify-content-between ">
+        <p class="day ml-sm-2 ml-md-5">الأمس</p>
+        <p class="timer-day mr-sm-0 mr-md-5">3:06:51</p>
+    </div>
+    <!-- Task 1 -->
+    <ul class="list-group list-group-flush mt-1">
+        <li class="list-group-item d-flex justify-content-between">
+              <div class="task d-inline-flex">
+                  <p class="task-title mr-md-2">دراسة المشروع</p>
+                  <div class="d-inline-flex ml-lg-2 projectname">
+                    <i class="far fa-circle text-center pt-2 pr-3"></i>
+                    <p>موقع الصيدلية</p>
+                  </div>
+                  <!-- <i class="task-subtitle first second d-none d-md-block"><i class="far fa-circle pr-2"></i>موقع صيدليه</i> -->
+              </div>
+          <div class=" task-opetions d-inline-flex">
+              <div class="btn task-marker d-none d-md-block">
+                <i class="fas fa-tag"></i>
+              </div>
+              <p class="start-end-task d-none d-md-block">10:54AM - 11:51AM</p>
+              <p class="total-time d-none d-md-block">2:35:09</p>
+              <div class="start-task">
+                <div class="btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+              <div class="pause-task">
+                <div class="btn">
+                <i class="fas fa-pause"></i>
+              </div>
+            </div>
+              <div class="remove-task">
+                <div class="btn">
+                <i class="fas fa-trash-alt "></i>
+              </div>
+            </div>
+          </div>
+      </li>
+     <!-- Task 2 -->
+     <li class="list-group-item d-flex justify-content-between">
+      <div class="task d-inline-flex">
+          <p class="task-title mr-md-2">تصميم واجهة التطبيق</p>
+          <div class="d-inline-flex ml-lg-2 projectname2">
+            <i class="far fa-circle text-center pt-2 pr-3"></i>
+            <p>موقع الصيدلية</p>
+          </div>
+          <!-- <i class="task-subtitle second d-none d-md-block"><i class="far fa-circle pr-2"></i>تطبيق المواقع</i> -->
+      </div>
+  <div class=" task-opetions d-inline-flex">
+      <div class="btn task-marker d-none d-md-block">
+        <i class="fas fa-tag"></i></div>
+      <p class="start-end-task d-none d-md-block">8:54AM - 10:50AM</p>
+      <p class="total-time d-none d-md-block">2:35:09</p>
+      <div class="start-task">
+        <div class="btn">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+      <div class="pause-task">
+        <div class="btn">
+        <i class="fas fa-pause"></i>
+      </div>
+    </div>
+      <div class="remove-task">
+        <div class="btn">
+        <i class="fas fa-trash-alt "></i>
+      </div>
+    </div>
+  </div>
+   </li>
+      </ul>
+</div>
+    
+    <!-- Day 3 -->
+    <div class="timer-detail my-5 box-shadow">
+        <div class="header-line pb-2 pt-4 d-flex justify-content-between ">
+            <p class="day ml-sm-2 ml-md-5">الثلاثاء 16 يونيو</p>
+            <p class="timer-day mr-sm-0 mr-md-5">3:06:51</p>
+        </div>
+        <!-- Task 1 -->
+        <ul class="list-group list-group-flush mt-1">
+            <li class="list-group-item d-flex justify-content-between">
+                  <div class="task d-inline-flex">
+                      <p class="task-title mr-md-2">دراسة المشروع</p>
+                      <div class="d-inline-flex ml-lg-2 projectname">
+                        <i class="far fa-circle text-center pt-2 pr-3"></i>
+                        <p>موقع الصيدلية</p>
+                      </div>
+                      <!-- <i class="task-subtitle first second d-none d-md-block">
+                        <i class="far fa-circle pr-2"></i>موقع صيدليه</i> -->
+                  </div>
+              <div class=" task-opetions d-inline-flex">
+                  <div class="btn task-marker d-none d-md-block"><i class="fas fa-tag"></i></div>
+                  <p class="start-end-task d-none d-md-block">10:54AM - 11:51AM</p>
+                  <p class="total-time d-none d-md-block">2:35:09</p>
+                  <div class="start-task">
+                    <div class="btn">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                  <div class="pause-task">
+                    <div class="btn">
+                    <i class="fas fa-pause"></i>
+                  </div>
+                </div>
+                  <div class="remove-task">
+                    <div class="btn">
+                    <i class="fas fa-trash-alt "></i>
+                  </div>
+                </div>
+              </div>
+          </li>
+         <!-- Task 2 -->
+         <li class="list-group-item d-flex justify-content-between">
+          <div class="task d-inline-flex">
+              <p class="task-title mr-md-2">تصميم واجهة التطبيق</p>
+              <div class="d-inline-flex ml-lg-2 projectname2">
+                <i class="far fa-circle text-center pt-2 pr-3"></i>
+                <p>موقع الصيدلية</p>
+              </div>
+              <!-- <i class="task-subtitle second d-none d-md-block"><i class="far fa-circle pr-2"></i>تطبيق المواقع</i> -->
+          </div>
+      <div class=" task-opetions d-inline-flex">
+          <div class="btn task-marker d-none d-md-block"><i class="fas fa-tag"></i></div>
+          <p class="start-end-task d-none d-md-block">8:54AM - 10:50AM</p>
+          <p class="total-time d-none d-md-block">2:35:09</p>
+          <div class="start-task">
+            <div class="btn">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+          <div class="pause-task">
+            <div class="btn">
+            <i class="fas fa-pause"></i>
+          </div>
+        </div>
+          <div class="remove-task">
+            <div class="btn">
+              <i class="fas fa-trash-alt "></i>
+            </div>
+          </div>
+      </div>
+       </li>
+          </ul>
+    </div>
+    </section>
+    
+
+  
+
+  <!-- end content -->
+</div>
+
+
+
+<!-- Style -->
+<link rel="stylesheet" href="../css/global-style.css">
+<link rel="stylesheet" href="../css/style-main.css">
+<link rel="stylesheet" href="../css/media.css">
+  <!-- JQ -->
+<script src="../js/jquery-3.5.1.min.js"></script>
+
+  <!-- Popper JS -->
+<script src="../js/popper.min.js"></script>
+  <!-- JS Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/angle-up-down.js"></script> 
+<script src="../js/jquery.stopwatch.js"></script>
+<script src="../js/timersection.js"></script>
+<script>
+   $(document).ready(function() {
+    
+
+        });
+</script>
+
+</body>
+</html>
+<!-- v1 -->

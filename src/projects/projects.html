@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/bootstrap.css">
+<link rel="stylesheet" href="../../css/bootstrap-rtl.css">
+<!-- Fontsawsome -->
+<link href="../../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <title>Projects</title>
+   
+</head> 
+
+<body>  
+  <div class="teest">
+    
+  <!-- side bar -->
+  <div id="sidebar">
+    <div class="container">
+      <div class="row mt-3 mb-lg-5 mb-sm-5">
+        <div class="col-lg-6">
+          <div class="logo d-none d-lg-block "><img src="../../images/logo2.png" alt=""></div>
+        </div>
+        <div class="col-sm-12 pb-sm-3 px-sm-0 offset-lg-2 col-lg-4 d-flex justify-content-start justify-content-lg-end ">
+         <div class="ring-bell btn"><i class="fas fa-bell bell"></i></div> 
+        </div>
+      </div>
+      <div class="row mt-5 ">
+        <div class="sidebar col">
+          <ul class="nav flex-column  sidebar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../../src/timerSection.html"> <i class="fas fa-clock"></i>
+                   <div class="d-inline text-sidebar">المؤقت</div> 
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../statistics/statisticsDetails.html">  <i class="far fa-chart-bar"></i>
+                   <div class="d-inline text-sidebar">الإحصائيات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"><i class="fas fa-folder"></i>
+                  <div class="d-inline text-sidebar">المشاريع</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../marker/marker.html"><i class="fas fa-tag"></i>
+                  <div class="d-inline text-sidebar">العلامات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../holidays/holidays.html"><i class="fas fa-calendar-alt"></i>  
+                  <div class="d-inline text-sidebar">الإجازات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../complaintsAndSuggestions/complaintAndSuggestions.html"> 
+                    <i class="fas fa-comments"></i>
+                  <div class="d-inline text-sidebar">الشكاوي</div> 
+                </a>
+              </li>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- end sidebar -->
+<!-- content -->
+<div class="content "> 
+  <!-- nav bar -->
+  <div class="dropdown d-flex justify-content-end dropdown-avatar">
+    <a class="btn d-inline-flex" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="img-user pt-2">AA</div>
+      <div class="user-info mr-1">
+        <div class="user-name">أمل العمري</div>
+        <div class="user-email">amal@gmail.com</div>
+      </div>
+    </a>
+    <div class="dropdown-menu  speech-bubble dropdown-menu-profile mr-auto" aria-labelledby="dropdownMenuUser">
+      <a class="dropdown-item" href="../../src/team.html"><i class="fa fa-users" aria-hidden="true"></i>الفريق</a>
+      <a class="dropdown-item" href="../../src/settings.html"><i class="fas fa-cog"></i>الإعدادت</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
+    </div>
+  </div>
+   <section id="project-header" class="mb-5 mt-3 pr-2">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-9">
+                    <label for="project-header pt-md-5" class="project-header-title">المشاريع</label>
+                </div>
+                <div class="col-sm-12 col-md-3 ">
+                    <button class="btn add-project"  data-toggle="modal" data-target="#AddNewProjectModel">
+                        <i class="fa fa-plus pr-2" aria-hidden="true"></i>
+                        مشروع جديد
+                    </button>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section id="sorting-projects" class=" border-bottom border-top py-2 pr-2">
+       <div class="container">
+              <div class="row ">
+                <div class="col-12 sort-project-nav ">
+                   <nav class="nav">
+                    <label for="sort-title" class="py-2 px-3">فرز حسب:</label>
+                    <div class="dropdown dropdwon-projects p-2">
+                      <a class="" href="#" role="button" id="dropdownGroupSorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-users"></i>
+                        المجموعة
+                      </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-size" aria-labelledby="dropdownMenuLink">
+                            <div class="input-icons search-group-icon">
+                              <i class="fas fa-search icon"></i>
+                              <input class="input-field form-control w-100" type="text" placeholder="ابحث عن اسم او مجموعة"> 
+                            </div>
+                          <div class="d-flex justify-content-between mb-2 p-2">
+                            <div class="names-dropdown ">الأسماء</div>
+                            <div class="selections-dropdwon ">
+                              <span class="select-all btn">الكل</span>
+                              <span class="select-none btn">لا أحد</span>
+                            </div>
+                          </div>
+                          <div class="chechbox-members pr-2">
+                            <label class="container-checked">
+                              <input type="checkbox"  >
+                              <span class="label">أمل العمري</span>
+                              <span class="checkmark"></span>
+                            </label>
+                            
+                            <label class="container-checked">
+                              <input type="checkbox"  >
+                              <span class="label">أسماء الشهري</span>
+                              <span class="checkmark"></span>
+                            </label>
+                            
+                            <label class="container-checked">
+                              <input type="checkbox"  >
+                              <span class="label">أريج الغامدي</span>
+                              <span class="checkmark"></span>
+                            </label>
+                            
+                            <label class="container-checked">
+                              <input type="checkbox"  >
+                              <span class="label">نورة العتيبي</span>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-searching-projects p-2">
+                      <a class="d-inline-flex" href="#" role="button" id="dropdownProjectSorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-folder mt-1"></i>
+                        <!-- <div class="selected-project mt-1">
+                          <i class="fas fa-folder"></i>
+                          <div class="badge"><i class="">1</i></div>
+                          </div> -->
+                        <div class="mr-2">المشروع</div>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-size" aria-labelledby="dropdownProjectSorting">
+                         <div class="input-icons search-project-icon">
+                            <i class="fas fa-search icon"></i>
+                          <input class="input-field form-control w-100" type="text" placeholder="ابحث غن مشروع"> 
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+       </div>
+   </section>
+
+   <section id="markers" class="mt-3 box-shadow ">
+       <div class="container">
+              <div class="row header-line">
+                  <div class="col-5  my-2">
+                    <p class="all-markers-title">المشروع</p>
+                  </div>
+                  <div class="col-3 my-2">
+                    <p class="all-markers-title">عدد الساعات</p>
+                  </div>
+                  <div class="col-3  my-2">
+                    <p class="all-markers-title">المجموعة</p>
+                  </div>
+              </div>
+              <div class="row ">
+                <div class="col-5  my-2">
+                  <div class="d-inline-flex ml-lg-2 projectname">
+                    <i class="far fa-circle text-center pt-2 pr-3"></i>
+                    <a href="projectDetails.html">موقع الصيدلية</a>
+                  </div>
+                </div>
+                <div class="col-3 my-2">
+                  <p>10 ساعات </p>
+                </div>
+                <div class="col-3  my-2">
+                  <p>أمل، أسماء، أريج </p>
+                </div>
+            </div>
+            <div class="row ">
+              <div class="col-5  my-2">
+                <div class="d-inline-flex ml-lg-2 projectname2">
+                  <i class="far fa-circle text-center pt-2 pr-3"></i>
+                    <a href="">تطبيق المطاعم</a>
+                </div>
+              </div>
+              <div class="col-3 my-2">
+                <p>23 ساعات </p>
+              </div>
+              <div class="col-3  my-2">
+                <p>أمل </p>
+              </div>
+          </div>
+       </div>
+   </section>
+
+
+</div>
+
+  <!--Add New Project  Modal -->
+  <div class="modal fade" id="AddNewProjectModel" tabindex="-1" role="dialog" aria-labelledby="AddNewProjectModelTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content mx-5 ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="AddNewProjectModelTitle">إنشاء مشروع جديدة</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="container mb-5">
+              <div class="row">
+                  <div class="col-12">
+                    <label for="add-new-project" class="add-new-project my-2">الاسم</label>
+                  </div>
+                  <div class="col-12 d-inline-flex">
+                    <div class="col-10">
+                      <input type="text" class="form-control my-2 input-add-new-project">
+                    </div>
+                    <div class="col-1 pt-2">
+                      <div class="project-color "></div>
+                  </div>
+                    </div>
+                    
+                  <div class="col-12 mt-2">
+                    <button type="button" class="btn btn-add-new-project form-control mt-3 mb-4">إنشاء</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+<!-- Style -->
+<link rel="stylesheet" href="../../css/global-style.css">
+<link rel="stylesheet" href="../../css/media.css">
+<link rel="stylesheet" href="../../css/project-style.css">
+  <!-- JQ -->
+<script src="../../js/jquery-3.5.1.min.js"></script>
+<script src="../../js/timersection.js"></script>
+  <!-- Popper JS -->
+<script src="../../js/popper.min.js"></script>
+  <!-- JS Bootstrap -->
+<script src="../../js/bootstrap.min.js"></script> 
+
+    <script>
+
+    </script>
+
+</body>
+</html>

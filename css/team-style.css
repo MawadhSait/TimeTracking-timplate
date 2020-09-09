@@ -1,0 +1,416 @@
+.intite-btn{
+    color: white;
+    background-color: #CF1240;
+     font-size: 20px;
+     font-family: Tajawal-Regular;
+     border-radius: 10px;
+} 
+.intite-btn:hover{
+    color: #CF1240;;
+    background-color: white;
+     border: 1px solid #CF1240;
+} 
+.team-nav nav a{
+
+color: #B2B2B2;
+font-size: 22px;
+ font-family: Tajawal-Regular;
+}
+.team-title{
+    font-size: 22px;
+ font-family: Tajawal-Regular;
+ font-weight: bold;
+color: black;
+}
+
+.team-nav nav a:hover{
+color: black;
+}
+.sort-team-nav{
+    border-top: 1px solid #eeeeeee5;
+    border-bottom: 1px solid #eeeeeee5;
+}
+.nav-sort,
+.nav-sort a{
+    color: #B2B2B2;
+}
+.nav-sort a:hover{
+    color:  #CF1240;
+}
+
+
+
+.table-team-header .row div{
+font-size: 20px;
+font-weight: bold;
+font-family: Tajawal-Regular;
+
+}
+.table-team-header .row div p{
+color: black;
+}
+.out-team-btn{
+    display: none;
+    padding: 0px;
+}
+
+.angle-down{
+    position: absolute;
+    top: 10px;
+    color:#B2B2B2;
+}
+.angle-up{
+    position: absolute;
+    color: #CF1240;
+}
+.row-table-team:hover .out-team-btn{
+    display:inline-block;
+}
+.btn-model-invite .btn{
+    color: white;
+    background-color: #CF1240;
+     font-size: 20px;
+     font-family: Tajawal-Regular;
+     border-radius: 10px;
+}
+.input-model-invite input{
+    border-radius: 10px;
+}
+.dropdown-out-team {
+    border-radius: 10px!important
+}
+.dropdown-out-team a{
+    color: #CF1240;
+}
+
+
+/* groups style in team nav */
+
+.add-group-btn{
+    color: white;
+    background-color: #CF1240;
+     font-size: 20px;
+     font-family: Tajawal-Regular;
+     border-radius: 10px;
+     padding-right: 0px;
+} 
+.add-group-btn i{
+    padding-left: 7px;
+}
+.add-group-btn:hover{
+    color: #CF1240;;
+    background-color: white;
+     border: 1px solid #CF1240;
+} 
+.team-nav nav a{
+color: #B2B2B2;
+font-size: 22px;
+ font-family: Tajawal-Regular;
+}
+.team-title{
+    font-size: 22px;
+ font-family: Tajawal-Regular;
+ font-weight: bold;
+color: black;
+}
+.team-nav nav active{
+    color: black;
+}
+.team-nav nav a:hover{
+color: black;
+}
+.search-icon i,
+.search-icon-dropdwon i { 
+position: absolute; 
+} 
+.search-icon ,
+.search-icon-dropdwon{ 
+width: 100%; 
+margin-bottom: 10px; 
+} 
+
+.icon { 
+padding: 15px; 
+color: #B2B2B2;
+min-width: 50px; 
+text-align: center; 
+} 
+.input-field { 
+width: 100%; 
+height: 100%;
+padding: 10px; 
+text-align: center; 
+border-radius: 10px;
+} 
+
+.title-group{
+    font-size: 20px;   
+ font-family: Tajawal-Regular;
+ font-weight: bold;
+}
+.edit-group i{
+  color: #CF1240;
+}
+
+.group-member div p{
+ font-size: 22px;   
+ font-family: Tajawal-Regular;
+}
+.remove-member{
+    color: #B2B2B2;
+}
+.remove-member:hover{
+    color: #CF1240;
+}
+.remove-member:active{
+    color: #CF1240;
+}
+.modal-content{
+    border-radius: 20px;
+    border: none;
+}
+.btn-model-add-group{
+    border-radius: 10px;
+    background-color:#CF1240;
+    font-family: Tajawal-Regular;
+    color: white;
+}
+.btn-model-add-group .btn{
+    color: white;
+}
+.dropdown-member-group .btn,
+.input-model-add-group  input,
+.dropdown-menu-checkbox,
+.name-team-model-label{ 
+    border-radius: 10px;
+}
+.dropdown-menu-checkbox{
+    border-radius: 15px;
+}
+
+input:checked ~ .checkmark {
+  background-color: green;
+}
+input[type=checkbox]:checked + label {
+  color: #4BC800;
+} 
+.select-all,
+.select-none{
+    color: #4BC800;
+}
+.names-dropdown,
+.select-all,
+.select-none{
+font-size: 14px;
+}
+.save-editing{
+    background-color:#CF1240;
+    font-family: Tajawal-Regular;
+    color: white;
+}
+.colse-editing{
+    border:1px solid #CF1240;
+    font-family: Tajawal-Regular;
+    color: #CF1240;
+}
+.save-editing:hover{
+   opacity: 0.9;
+    color: white;
+}
+.colse-editing:hover{
+    border:1px solid #cf12419f;
+    opacity: 0.7;
+}
+
+/* activiy page */
+
+.img-user-activitiest{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #C7AF14;
+}
+.username-activitiest p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+}
+.header-activitiest p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+}
+.img-user-activitiest{
+    font-size: 24px;
+    color: white;
+    font-family: Tajawal-Regular;
+    
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+
+.tabel-activity-rows div .img-user-activitiest{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C7AF14;
+}
+.tabel-activity-rows .asmaa .img-user-activitiest{
+    background-color: #1473C7;
+}
+.tabel-activity-rows .areej .img-user-activitiest{
+    background-color: #C71414
+}
+.tabel-activity-rows div p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+}
+.activity-title p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+}
+.selected{
+    color: #4BC800;
+}
+.sorting-activity-header{
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    color:#B2B2B2;
+}
+.sorting-activity-dropdown{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+   border-radius: 20px;
+}
+.sorting-activity-dropdown a:hover{
+    color:#4BC800;
+    background-color: #EBF3E6;
+   
+}
+
+/* team leader style */
+.table-team-header .row div{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tajawal-Regular;
+    
+    }
+    .out-team-btns{
+        /* display: none; */
+        color:#B2B2B2;
+    }
+    
+    .row-table-team:hover .out-team-btns{
+        display:inline-block;
+       
+    }
+    .btn-model-invite .btn{
+        color: white;
+        background-color: #CF1240;
+         font-size: 20px;
+         font-family: Tajawal-Regular;
+         border-radius: 10px;
+    }
+    .input-model-invite input{
+        border-radius: 10px;
+    }
+    .dropdown-out-team {
+        border-radius: 10px!important
+    }
+    .leave-group{
+        color: #CF1240;
+    }
+    .leave-group:hover{
+          color: #CF1240;
+        background-color: #f8ceda;
+    }
+    .dropdown-out-team .editing-group-owner{
+        color: #4BC800;
+    }
+    .editing-group-owner:hover{
+        color:#4BC800;
+        background-color: #EBF3E6;
+    }
+    .member-cancel{
+    border: 1px solid #CF1240;
+    color: #CF1240;
+    }
+    .member-save{
+    background-color: #CF1240; 
+    color: white;
+    }
+    #leader-member-email,
+    #leader-member-name,
+    #leader-member-permission,
+    .member-cancel,
+    .member-save{
+    border-radius: 10px;
+    }
+
+@media only screen and (max-width: 600px) {
+    .group-header{
+    padding: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#team-table{
+    padding-left: 0px!important;
+}
+.img-user-activitiest{
+    display: none;
+}
+.tabel-activity-rows div p{
+    font-size: 14px!important;
+}
+.activity-title p{
+    font-size: 14px!important;
+}
+}
+@media only screen and (width: 1024px) {
+ 
+.nav-sort label{
+   font-size: 10px!important;
+}
+}
+@media only screen and (max-width: 900px) {
+  
+    #sidebar{
+        width: 50px!important;
+    }
+    #sidebar .container{
+        padding-right: 10px;
+       padding-left: 0px;
+    }
+    .sidebar-nav .nav-item:hover a{
+    padding-right: 15px!important;
+    }
+    .sidebar-nav .nav-item:hover{
+        box-shadow:none!important;
+    }
+    .content{
+      margin-right: 50px!important;
+      /* padding-right: 20px; */
+    }
+    .user-img{
+      height: 30px!important;
+      width: 30px!important;
+    
+    }
+    .team-nav nav a{
+
+        font-size: 17px!important;
+        
+        }
+        .team-title{
+            font-size: 17px!important;
+        
+        }
+    }

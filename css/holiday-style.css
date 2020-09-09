@@ -1,0 +1,379 @@
+/* holiday page */
+#headerSuggestion div p{
+  color: #CF1240;
+  font-family: Tajawal-Regular;
+  font-size: 22px; 
+  font-weight: bold;
+}
+
+
+.refuse-request p{
+  border: 1px solid #CF1240;
+  border-radius: 7px;
+  width: 130px;
+  font-family: Tajawal-Regular;
+  color: #CF1240;
+}
+.under-processing-request p{
+  border: 1px solid #EFB248;
+  border-radius: 7px;
+  width: 150px;
+  font-family: Tajawal-Regular;
+  color: #EFB248;
+}
+.table-body div div p{
+margin-bottom: 5px;
+}
+
+/* pie charts style */
+#holiday{
+height:143px;
+width:143px;
+margin: 0;
+}
+
+#holiday .pc-bg{
+stroke:#CCCCCC
+}
+#holiday .pc-fill{
+stroke:#EFB248
+}
+
+
+
+#consumed-holiday{
+height:143px;
+width:143px;
+margin: 0;
+
+}
+
+#consumed-holiday .pc-bg{
+stroke:#CCCCCC
+}
+#consumed-holiday .pc-fill{
+stroke:#4BC800
+}
+
+#reamaing-holiday{
+height:143px;
+width:143px;
+margin: 0;
+
+}
+
+#reamaing-holiday .pc-bg{
+stroke:#CCCCCC
+}
+#reamaing-holiday .pc-fill{
+stroke:#CF1240
+}
+.pie-chart-title{
+font-family: Tajawal-Regular;
+font-size: 22px;  
+font-weight: bold;
+}
+.pie-chart-details{
+font-family: Tajawal-Regular; 
+}
+
+@media only screen and (max-width: 600px) {
+.block-sm{
+  display: none!important
+}
+.pie-chart-title{
+
+  font-size: 20px!important 
+
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .pie-chart-title{
+  
+    font-size: 20px!important 
+  
+    }
+  }
+
+
+#headerSuggestion div p{
+    color: #CF1240;
+    font-family: Tajawal-Regular;
+    font-size: 22px; 
+    font-weight: bold;
+}
+.btn-holiday-request .btn{
+    background-color: #CF1240;;
+    border-radius: 10px;
+    font-family: Tajawal-Regular;
+    color: white;
+    font-size: 22px;  
+}
+.btn-holiday-request .btn:hover{
+    background-color: white;
+   border: 1px solid #CF1240;
+   color: #CF1240;
+}
+.accept-request p{
+    border: 1px solid #4BC800;
+    border-radius: 7px;
+    width: 130px;
+    font-family: Tajawal-Regular;
+    color: #4BC800;
+}
+.refuse-request p{
+    border: 1px solid #CF1240;
+    border-radius: 7px;
+    width: 130px;
+    font-family: Tajawal-Regular;
+    color: #CF1240;
+}
+.under-processing-request p{
+    border: 1px solid #EFB248;
+    border-radius: 7px;
+    width: 150px;
+    font-family: Tajawal-Regular;
+    color: #EFB248;
+}
+.table-body div div p{
+  margin-bottom: 5px;
+}
+.check-all-day{
+    padding-top: 40px;
+}
+.reasons-option{
+    padding-right: 35px;
+}
+.custom-file{
+    border: 1px dashed black;
+}
+.formTitle{
+  font-family: Tajawal-Regular;
+  font-size: 22px; 
+  font-weight: bold;
+}
+.form-control{
+  border-radius: 10px;
+}
+small{
+    color:#B2B2B2;
+}
+
+
+/* holiday Admin */
+#headerSuggestion{
+    font-family: Tajawal-Regular;
+    font-size: 22px;  
+    font-weight: bold;
+    color: #CF1240; 
+  }
+  .table-header{
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+    color: #CF1240; 
+  }
+    .refuse-btn{
+        border: 1px solid #CF1240; ;
+        border-radius: 5px;
+        color: #CF1240; 
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .accept-btn{
+        border: 1px solid #4BC800 ;
+        border-radius: 5px;
+        color: #4BC800 ;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .refuse-btn:hover{
+      background-color:  #CF1240; ;
+      color: white;
+    }
+    .accept-btn:hover{
+        background-color:   #4BC800 ;
+        color: white;
+    }
+    .collapse-bg{
+      background-color: #F6F6F6;
+    }
+  .holiday-dates{
+    font-size: 14px;
+  }
+  .download a{
+    color: #333333;
+  }
+  .download:hover{
+    text-decoration: underline;
+  }
+  .undownload{
+    color: #B2B2B2;
+  }
+@media only screen and (max-width: 600px){
+  .check-all-day{
+    padding-top: 10px!important;
+}
+
+  .table-header,
+  .employee div{
+     font-size: 10px!important;
+   }
+  
+   .undownload,
+   .download{
+     font-size: 9px!important;
+   }
+   .accept-request p,
+   .refuse-request p,
+   .under-processing-request p{
+    font-size: 10px;
+    width: 100px;
+  
+}
+@media only screen and (max-width: 600px){
+  .table-txt-sm div p{
+    font-size: 10px!important;
+  }
+  }
+
+ }
+
+
+.cont {
+display: block;
+position: relative;
+padding-right: 25px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.cont input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+position: absolute;
+bottom: 5px;
+right: 0;
+height: 15px;
+width: 15px;
+background-color: white;
+border: 1px solid black;
+border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+/* .cont:hover input ~ .checkmark {
+background-color: #ccc;
+} */
+
+/* When the radio button is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+border: 2px solid #CF1240;;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.cont input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.cont .checkmark:after {
+/* left: 2px; */
+right: 2px;
+top: 2px;
+width: 7px;
+height: 7px;
+border-radius: 50%;
+background: #CF1240;
+}
+
+
+/* The cont-checkbox */
+
+.cont-checkbox {
+display: block;
+position: relative;
+padding-right: 25px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 17px;
+font-family: Tajawal-Regular;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cont-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.cont-checkbox .checkmark {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 14px;
+width: 14px;
+border: 1px solid black;
+border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+/* .cont-checkbox:hover input ~ .checkmark {
+background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.cont-checkbox input:checked ~ .checkmark {
+background-color: #CF1240;
+border: #CF1240;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.cont-checkbox .checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.cont-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.cont-checkbox .checkmark:after {
+right: 5px;
+bottom: 3px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}

@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap-rtl.css">
+<link rel="stylesheet" type="text/css" href="../../css/jquery.simple-bar-graph.min.css">
+<!-- Fontsawsome -->
+<link href="../../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+<!-- date picker styles -->
+<link rel="stylesheet" type="text/css" href="../../css/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="../../css/date-picker.css">
+
+<!-- uploding file plugins -->
+<link rel="stylesheet" href="../../css/uplode-file-holiday.css">
+
+    <title>Holiday</title>
+    <style  class="init">
+  
+      
+    </style> 
+</head> 
+
+<body>  
+   <!-- side bar -->
+   <div id="sidebar">
+    <div class="container">
+      <div class="row mt-3 mb-lg-5 mb-sm-5">
+        <div class="col-lg-6">
+          <div class="logo d-none d-lg-block "><img src="../../images/logo2.png" alt=""></div>
+        </div>
+        <div class="col-sm-12 pb-sm-3 px-sm-0 offset-lg-2 col-lg-4 d-flex justify-content-start justify-content-lg-end ">
+         <div class="ring-bell btn"><i class="fas fa-bell bell"></i></div> 
+        </div>
+      </div>
+      <div class="row mt-5 ">
+        <div class="sidebar col">
+          <ul class="nav flex-column  sidebar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../../src/timerSection.html"> <i class="fas fa-clock"></i>
+                   <div class="d-inline text-sidebar">المؤقت</div> 
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../src/statistics/statisticsDetails.html">  <i class="far fa-chart-bar"></i>
+                   <div class="d-inline text-sidebar">الإحصائيات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../src/projects/projects.html"><i class="fas fa-folder"></i>
+                  <div class="d-inline text-sidebar">المشاريع</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../src/marker/marker.html"><i class="fas fa-tags"></i>
+                  <div class="d-inline text-sidebar">العلامات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../holidays/holidays.html"><i class="fas fa-calendar-alt"></i>  
+                    
+                  <div class="d-inline text-sidebar">الإجازات</div> 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../complaintsAndSuggestions/complaintAndSuggestions.html"> 
+                    <i class="fas fa-comments"></i>
+                  <div class="d-inline text-sidebar">الشكاوي</div> 
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- end sidebar -->
+<!-- content -->
+<div class="content mb-5"> 
+  <!-- nav bar -->
+  <div class="dropdown d-flex justify-content-end dropdown-avatar">
+    <a class="btn d-inline-flex" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="img-user pt-2">AA</div>
+      <div class="user-info mr-1">
+        <div class="user-name">أمل العمري</div>
+        <div class="user-email">amal@gmail.com</div>
+      </div>
+    </a>
+    <div class="dropdown-menu  speech-bubble dropdown-menu-profile mr-auto" aria-labelledby="dropdownMenuUser">
+      <a class="dropdown-item" href="../../src/team.html"><i class="fa fa-users" aria-hidden="true"></i>الفريق</a>
+      <a class="dropdown-item" href="../../src/settings.html"><i class="fas fa-cog"></i>الإعدادت</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href=""><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
+    </div>
+  </div>
+
+
+<section id="headerSuggestion" class="box-shadow py-4 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <p>الإجازات</p>
+            </div>
+            <div class="col-md-3 btn-holiday-request">
+                <a href="employeeTimeOffRequestForm.html" class="btn  form-control">
+                  <i class="fas fa-plus"></i>
+                    طلب إجازة
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="holidaysPieCharts" class="box-shadow p-2 mt-3 mb-3">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4 holiday-pie-chart">
+            <div class=" px-0 pie-chart-title">
+                <p>رصيد الإجازات</p>
+            </div>
+            <div class="d-inline-flex p-0">
+                <div id="holiday"></div>
+                <div class="mt-5 mr-1 pie-chart-details">
+                  <p>21 يوم</p>
+                  <p>504 ساعات</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 holiday-pie-chart">
+            <div class="px-0 pie-chart-title">
+                <p>رصيد الإجازاة المتبقي</p>
+            </div>
+            <div class="d-inline-flex p-0">
+              <div id="consumed-holiday"></div>
+                  <div class="mt-5 mr-1 pie-chart-details">
+                    <p>21 يوم</p>
+                    <p>504 ساعات</p>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 holiday-pie-chart">
+            <div class=" px-0 pie-chart-title">
+                <p>رصيد الإجازة المستهلك</p>
+            </div>
+            <div class="d-inline-flex p-0">
+                <div id="reamaing-holiday"></div>
+                  <div class="mt-5 mr-1 pie-chart-details">
+                    <p>21 يوم</p>
+                    <p>504 ساعات</p>
+                  </div>
+             </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="holidayTable" class="box-shadow pt-3 my-5"> 
+    <div class="container">
+        <div class="row header-line mb-3 table-txt-sm">
+            <div class=" col-2">
+                <p>الإجازة</p>
+            </div>
+            <div class="col-2">
+                <p>مدة الإجازة</p>
+            </div>
+            <div class="col-2 block-sm">
+                <p>الساعات</p>
+            </div>
+            <div class="col-3 "> 
+                <p>عدد الساعات</p>
+            </div>
+            <div class="col-2"> 
+                <p>حالة الطلب</p>
+            </div>
+        </div>
+        <div class="table-body">
+          <div class="row border-bottom mt-3 table-txt-sm">
+            <div class="col-2">
+                <p>إجازة شخصية</p>
+            </div>
+            <div class="col-2">
+                <p>4 أيام</p>
+            </div>
+            <div class="col-2 block-sm">
+                <p>طوال اليوم</p>
+            </div>
+            <div class="col-3 "> 
+                <p>13/7/2020 - 16/7/2020</p>
+            </div>
+            <div class="col-2 mb-1"> 
+               <div class="request-status accept-request text-center">
+                   <p class="p-1"> تم قبول الإجازة  </p>
+               </div>
+            </div>
+        </div>
+        <div class="row border-bottom mt-3 table-txt-sm">
+          <div class="col-2 ">
+              <p>إجازة طبية</p>
+          </div>
+          <div class="col-2 ">
+              <p>3 ساعات </p>
+          </div>
+          <div class="col-2 block-sm">
+              <p>9:30 - 12:30</p>
+          </div>
+          <div class="col-3"> 
+              <p>18/7/2020 - 18/7/2020</p>
+          </div>
+          <div class="col-2  mb-1"> 
+             <div class="request-status refuse-request text-center">
+                 <p class="p-1"> تم رفض الإجازة  </p>
+             </div>
+          </div>
+      </div>
+      <div class="row border-bottom mt-3 table-txt-sm">
+        <div class="col-2">
+            <p>إجازة طبية</p>
+        </div>
+        <div class="col-2">
+            <p>3 ساعات </p>
+        </div>
+        <div class="col-2 block-sm">
+            <p>9:30 - 12:30</p>
+        </div>
+        <div class="col-3 col-md-3"> 
+            <p>18/7/2020 - 18/7/2020</p>
+        </div>
+        <div class="col-2 mb-1"> 
+           <div class="request-status under-processing-request text-center">
+               <p class="p-1"> جاري معالجة الطلب </p>
+           </div>
+        </div>
+    </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+    <!-- content End -->
+</div>
+
+
+<!-- Style -->
+<link rel="stylesheet" href="../../css/global-style.css">
+<link rel="stylesheet" href="../../css/style-main.css">
+<link rel="stylesheet" href="../../css/media.css">
+<link rel="stylesheet" href="../../css/holiday-style.css">
+  <!-- JQ -->
+<script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+<!-- <script type="text/javascript" src="../../jquery.min.js"></script> -->
+  <!-- Popper JS -->
+<script src="../../js/popper.min.js"></script>
+  <!-- JS Bootstrap -->
+<script src="../../js/bootstrap.min.js"></script> 
+
+<script src="../../js/percent-chart.js"></script>
+<link rel="stylesheet" href="../../css/percent-chart.css">
+<script src="../../js/holiday-pieChart.js"></script>
+
+<script>
+  
+  </script>
+
+</body>
+</html>
+
+

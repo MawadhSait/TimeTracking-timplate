@@ -1,0 +1,44 @@
+/* media */
+
+/* for sid,nav */
+@media only screen and (max-width: 900px) {
+    .text-sidebar{
+      display: none!important;
+    }
+    #sidebar{
+        width: 50px!important;
+    }
+    .sidebar-nav .nav-item:hover a{
+    padding-right: 15px!important;
+    }
+    .sidebar-nav .nav-item:hover{
+        box-shadow:none!important;
+    }
+    .content{
+      margin-right: 50px!important;
+      
+    }
+    .user-img{
+      height: 30px!important;
+      width: 30px!important;
+    
+    }
+    
+    }
+    @media only screen and (width: 320px) {
+        #sidebar{
+            width: 40px!important;
+        }
+        .content{
+            margin-right: 40px!important;
+          }
+    }
+
+    @media only screen and (max-width: 600px) {
+     
+      /* .content{
+          padding-left: 5px!important;
+        } */
+  }
+
+  

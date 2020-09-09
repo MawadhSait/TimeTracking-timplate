@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-rtl.css">
+<!-- Fontsawsome -->
+<link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <title>T3</title>
+    <style>
+.intite-btn{
+    color: white;
+    background-color: #CF1240;
+     font-size: 20px;
+     font-family: Tajawal-Regular;
+     border-radius: 10px;
+} 
+.intite-btn:hover{
+    color: #CF1240;;
+    background-color: white;
+     border: 1px solid #CF1240;
+} 
+.team-nav nav a{
+
+color: #B2B2B2;
+font-size: 22px;
+ font-family: Tajawal-Regular;
+}
+.team-title{
+    font-size: 22px;
+ font-family: Tajawal-Regular;
+ font-weight: bold;
+color: black;
+}
+
+.team-nav nav a:hover{
+color: black;
+}
+.team-nav nav .active{
+    color: black;
+}
+
+.img-user-activitiest{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #C7AF14;
+}
+.username-activitiest p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+}
+.header-activitiest p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+}
+.img-user-activitiest{
+    font-size: 24px;
+    color: white;
+    font-family: Tajawal-Regular;
+    
+}
+#most-actisiest,
+#sort-activitiest{
+    box-shadow: 0px 1px 2px #B2B2B2, 0px -1px 2px #B2B2B2;
+}
+select{
+    border: white;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px #B2B2B2;
+        box-shadow: 0 0 10px #B2B2B2;
+        border: 1px solid #B2B2B2;
+}
+.tt option:hover{
+    background-color: red;
+}
+
+
+
+.tabel-activity-header{
+border-bottom: 2px solid #CF1240; 
+padding-top: 15px; 
+position: relative;
+}
+.tabel-activity-header:after {
+position: absolute; 
+bottom: -6px; 
+right: 0; 
+height: 10px; 
+width: 10px; 
+background: #CF1240;
+content: ""; 
+border-radius: 5px;
+}
+.tabel-activity-rows div .img-user-activitiest{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C7AF14;
+}
+.tabel-activity-rows .asmaa .img-user-activitiest{
+    background-color: #1473C7;
+}
+.tabel-activity-rows .areej .img-user-activitiest{
+    background-color: #C71414
+}
+.tabel-activity-rows div p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+}
+.activity-title p{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+}
+.selected{
+    color: #4BC800;
+}
+.sorting-activity-header{
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    color:#B2B2B2;
+}
+.sorting-activity-dropdown{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+   border-radius: 20px;
+}
+.sorting-activity-dropdown a:hover{
+    color:#4BC800;
+    background-color: #EBF3E6;
+   
+}
+
+
+@media only screen and (max-width: 600px) {
+.img-user-activitiest{
+    display: none;
+}
+.tabel-activity-rows div p{
+    font-size: 14px!important;
+}
+.activity-title p{
+    font-size: 14px!important;
+}
+
+}
+    </style> 
+</head> 
+
+<body>  
+
+    <!-- this page according employee option in activity  -->
+<div class="content mt-5">
+    <section id="team-sections ">
+        <div class="container">
+            <div class="row mb-md-4">
+                <div class="col-md-9 team-nav">
+                    <nav class="nav nav-team">
+                        <label for="team-title" class="pl-3 pt-2 mr-lg-2 team-title">الفريق</label>
+                        <a class="nav-link" href="#">الموظفين</a>
+                        <a class="nav-link" href="#">المجموعات</a>
+                        <a class="nav-link active" href="#" >النشاط</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="most-actisiest" class="border-top border-bottom pt-4 mt-5 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header-activitiest">
+                <p>الأكثر نشاطاً خلال آخر 7 أيام</p>
+            </div>
+            <div class="col-md-12 d-inline-flex">
+                <div class="img-user-activitiest text-center pt-lg-2">AA </div>
+                <div class="username-activitiest mr-3">
+                    <p class="mb-1">أمل العمري</p>
+                    <p class="mb-1">35:24:09</p>
+                </div>
+            </div>
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+ </section>
+ <section id="sort-activitiest"class="border-top border-bottom pt-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 sorting-activity-header border d-inline-flex">
+                <label for="sorting-activity-title" class="sorting-activity-title">النشاط حسب</label>
+                <div class="dropdown">
+                    <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu sorting-activity-dropdown" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="submenuEployeeActivity.html" >الموظفين</a>
+                      <a class="dropdown-item" href="submenueTimeActivity.html">آخر 20 وقت مدخل</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="tabel-activity-header mt-5 mb-3">
+            <div class="row">
+                <div class="col-3 activity-title">
+                    <p>الفريق</p>
+                </div>
+                <div class="col-3 activity-title">
+                    <p>المهمة</p>
+                </div>
+                <div class="col-3 activity-title">
+                    <p>المدة</p>
+                </div>
+                <div class="col-3 activity-title">
+                    <p>نهاية الوقت</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tabel-activity-body">
+            <div class="row border-bottom my-2 tabel-activity-rows">
+                <div class="col-3 d-inline-flex   py-1">
+                    <div class="img-user-activitiest pr-1 mr-2 d-xs-none d-md-block text-center" >AA</div>
+                    <p class="pt-1">أمل العمري</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">تصميم واجهة التطبيق</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">02:58:13</p>
+                </div>
+                <div class="col-3 selected">
+                    <p class="pt-1">مستمر</p>
+                </div>
+            </div>
+            <div class="row border-bottom  my-2 tabel-activity-rows">
+                <div class="col-3 d-inline-flex asmaa  py-1">
+                    <div class="img-user-activitiest pr-1 mr-2 d-xs-none d-md-block text-center" >AA</div>
+                    <p class="pt-1">أسماء الشهري</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">دراسة المشروع</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">02:58:13</p>
+                </div>
+                <div class="col-3 selected">
+                    <p class="pt-1">مستمر</p>
+                </div>
+            </div>
+            <div class="row border-bottom  my-2 tabel-activity-rows">
+                <div class="col-3 d-inline-flex  areej py-1">
+                    <div class="img-user-activitiest pr-1 mr-2 d-xs-none d-md-block text-center" >AA</div>
+                    <p class="pt-1">أريج الغامدي</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">تصميم التطبيق</p>
+                </div>
+                <div class="col-3">
+                    <p class="pt-1">02:58:13</p>
+                </div>
+                <div class="col-3 selected">
+                    <p class="pt-1">مستمر</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+ </section>
+
+
+
+
+
+
+
+</div>
+
+
+<!-- Style -->
+<link rel="stylesheet" href="../css/style-main.css">
+  <!-- JQ -->
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/timersection.js"></script>
+  <!-- Popper JS -->
+<script src="../js/popper.min.js"></script>
+  <!-- JS Bootstrap -->
+<script src="../js/bootstrap.min.js"></script> 
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

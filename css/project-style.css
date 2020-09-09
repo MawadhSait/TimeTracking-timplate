@@ -1,0 +1,368 @@
+.project-header-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tajawal-Regular;
+}
+.add-project{
+    color: white;
+    font-size: 22px;
+    font-family: Tajawal-Regular;
+    background-color:#CF1240;
+    border-radius: 10px;
+}
+.add-project:hover{
+border: 1px solid #CF1240;
+color: #CF1240;
+background-color:white;
+}
+
+.nav label{
+  color: #B2B2B2;
+}
+.dropdown-sorting-group:hover{
+    background-color:#F6F6F6;
+    color: #CF1240;
+    border-radius: 10px;
+
+}
+.dropdown-sorting-group{
+    color: #B2B2B2;
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+}
+
+.markers-header-all{
+border-bottom: 2px solid #CF1240; 
+padding-top: 15px; 
+position: relative;
+}
+.markers-header-all:after {
+position: absolute; 
+bottom: -6px; 
+right: 0; 
+height: 10px; 
+width: 10px; 
+background: #CF1240;
+content: ""; 
+border-radius: 5px;
+}
+
+
+.all-markers-title{
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    font-weight: bold;
+}
+
+/* inside model */
+.add-new-project{
+    color: #B2B2B2;
+}
+.btn-add-new-project{
+    background-color:  #CF1240; 
+    font-size: 20px;
+    font-family: Tajawal-Regular;
+    color:white;
+    border-radius: 10px;
+}
+.btn-add-new-project:hover{
+  background-color:  white;
+   border: 1px solid #CF1240; 
+}
+.input-add-new-project{
+    border-radius: 10px;
+}
+.project-color{
+  background-color: #06A893;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.modal-content{
+    border-radius: 20px;
+}
+
+.select-all,
+.select-none{
+    color: #4BC800;
+}
+.names-dropdown,
+.select-all,
+.select-none{
+font-size: 14px;
+}
+input[type=checkbox]:checked + label {
+  color: #4BC800;
+} 
+.search-project-icon i{
+  color: #4BC800;
+}
+
+.input-icons i { 
+    position: absolute; 
+    margin-left: 100px;
+} 
+.input-icons { 
+    width: 100%; 
+    padding-right: 10px;
+    padding-left: 10px;
+} 
+  
+.icon { 
+    padding: 10px; 
+    padding-right: 5px;
+    min-width: 40px; 
+} 
+  
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 10px;
+    padding-left: 0px;
+    padding-right: 20px;
+
+} 
+.dropdown-searching-projects .dropdown-size{
+  width: 200px;
+  border-radius: 10px;
+}
+.dropdwon-projects .dropdown-size{
+  width: 250px;
+  border-radius: 10px;
+}
+#dropdownGroupSorting,
+#dropdownProjectSorting{
+  font-size: 20px;
+  font-family: Tajawal-Regular;
+color: #B2B2B2;
+text-decoration: none;
+}
+#dropdownGroupSorting:hover,
+#dropdownProjectSorting:hover{
+color: #CF1240;
+}
+
+
+
+
+/* selected specific project */
+.selected-project i{
+	position: absolute;
+	color: #4BC800
+	}
+	.selected-project .badge{
+	position: relative;
+	top: -9px;
+	left: 6px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #CF1240;
+	color: white;
+	}
+	.selected-project .badge i{
+	left: 4px;
+	bottom: 2px;
+	color: white;
+    }
+    
+
+
+    /* project details */
+    .project-color{
+      background-color: #06A893;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin: auto;
+    }
+    .edited-project-save,
+    .btn-edit-project{
+        background-color:  #CF1240; 
+        font-size: 17px;
+        font-family: Tajawal-Regular;
+        color:white;
+        border-radius: 10px;
+    }
+    .edited-project-save:hover,
+    .btn-edit-project:hover{
+        color:  #CF1240; 
+        background-color:  white;
+       border: 1px solid #CF1240; 
+    }
+    .remove-project,
+    .edited-name-project{
+        color: #B2B2B2;
+        font-family: Tajawal-Regular;
+    }
+    .remove-project:hover{
+        color: #CF1240;
+    }
+    .modal-content,
+    .input-edited-name-project{
+        border-radius: 20px;
+    }
+    
+    .input-edited-name-project{
+        border-radius: 10px;
+    }
+    .btn-new-member{
+        color:  #CF1240; 
+       border: 1px solid #CF1240; 
+        font-size: 17px;
+        font-family: Tajawal-Regular;
+        border-radius: 10px;
+    }
+    .btn-new-member:hover{
+        background-color:  #CF1240; 
+        font-size: 17px;
+        font-family: Tajawal-Regular;
+        color:white;
+        border-radius: 10px;
+    }
+    .detail-table{
+        -webkit-box-shadow: 0 0 10px #B2B2B2;
+            box-shadow: 0 0 10px #B2B2B2;
+        border-radius: 10px;
+    
+    }
+    .member-table-header{
+        box-shadow: 0 2px 2px -1px #B2B2B2;
+      color: #B2B2B2;
+      font-family: Tajawal-Regular;
+    }
+    .remove-member{
+        color:  #CF1240; 
+    }
+    .remove-member:hover{
+        color:  #B2B2B2;
+    }
+    .summery-title{
+        font-size: 27px;
+        font-family: Tajawal-Regular;
+        font-weight: bold;
+    }
+    .recorded-hours{
+        font-size: 22px;
+        font-family: Tajawal-Regular;
+        color:  #B2B2B2;
+    }
+    .total-hours{
+        font-size: 49px;
+        font-family: Tajawal-Regular;
+    }
+    .select-all,
+    .select-none{
+        color: #4BC800;
+    font-size: 14px;
+    }
+    input[type=checkbox]:checked + label {
+      color: #4BC800;
+    } 
+    .input-icons i { 
+        position: absolute; 
+        margin-left: 100px;
+    } 
+    .input-icons { 
+        width: 100%; 
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+      
+    .icon { 
+        padding: 10px; 
+        padding-right: 5px;
+        min-width: 40px; 
+    } 
+      
+    .input-field { 
+        width: 100%; 
+        padding: 10px; 
+        text-align: center; 
+        border-radius: 10px;
+        padding-left: 0px;
+        padding-right: 20px;
+    
+    } 
+    .add-members-ptoject{
+        color:  #CF1240; 
+       border: 1px solid #CF1240; 
+        font-size: 17px;
+        font-family: Tajawal-Regular;
+        border-radius: 10px;
+    }
+    .add-members-ptoject:hover{
+        background-color:  #CF1240; 
+        font-size: 17px;
+        font-family: Tajawal-Regular;
+        color:white;
+        border-radius: 10px;
+    }
+    .names-dropdown,
+    .search-mebers-icon{
+        font-size: 14px;
+        color:  #B2B2B2;
+    }
+    .dropdown-member-project .btn{
+        color:  #B2B2B2;
+        border-radius: 10px;
+    }
+    @media only screen and (max-width: 400px) {
+        .modal-content{
+            margin: 0px!important;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .ring-bell{
+            padding-right: 0px!important
+        }
+        
+    }
+@media only screen and (max-width: 800px) {
+    .add-project{
+
+        font-size: 15px!important;
+       padding-left: 5px!important;
+       padding-right: 5px!important;;
+    }
+    .add-project i{
+
+        font-size: 10px!important
+    }
+    .all-markers-title{
+        font-size: 15px!important
+    }
+  
+   .btn-edit-project{
+    font-size: 15px!important;
+    margin-top: 10px;
+}
+#editProjectMpdelLabel{
+    font-size: 15px;
+    padding-right: 10px;
+}
+}
+@media only screen and (width: 1024px) {
+    .all-markers-title{
+        font-size: 12px!important
+    }
+    .btn-edit-project{
+        width: 170px;
+        font-size: 12px!important
+    }
+    .add-project{
+        font-size: 17px!important;
+    }
+}
+@media only screen and (width: 320px) {
+    .content{
+        margin-right: 40px!important;
+        padding-right: 0px!important;
+    }
+    .project-color-sm{
+        padding-right: 0px!important;
+    }
+ 
+
+}
